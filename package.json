@@ -1,14 +1,17 @@
 {
   "name": "fill_me_in",
   "version": "1.0.0",
-  "description": "",
+  "description": "Fill Me In Food. Eat awesome food.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass scss/main.scss css/style.css -w"
   },
-  "author": "",
+  "author": "Rob Catlin",
   "license": "ISC",
   "dependencies": {
     "npm": "^6.4.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.10.0"
   }
 }
