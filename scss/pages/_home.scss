@@ -1,0 +1,26 @@
+.section-about {
+  padding: 10rem 0;
+  // margin-top: 10rem;
+  background-color: rgba($color-grey-light-1, .9);
+}
+
+.about {
+
+  &__text-box {
+    width: 80%;
+    padding: 3rem 6rem;
+    margin: 0 auto;
+    background-color: rgba($color-white, .8);
+    transform: skewX(-8deg);
+  }
+
+  &__inner-text-box {
+    padding: 3rem;
+    transform: skewX(8deg);
+  }
+}
+
+.section-food {
+  position: relative;
+  padding: 10rem 0;
+}

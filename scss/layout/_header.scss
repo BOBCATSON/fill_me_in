@@ -1,10 +1,10 @@
 .header {
-  height: 80vh;
+  height: 85vh;
   position: relative;
   background-image: linear-gradient(
     to right bottom,
     rgba($color-primary, .8),
-    rgba($color-primary-light, .8)),
+    rgba($color-primary-red, .4)),
     url('./../img/hero.jpg');
     background-size: cover;
     background-position: top center;
@@ -25,23 +25,29 @@
     position: absolute;
     top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
+    transform: translate(-50%, -50%);
+    backface-visibility: hidden;
   }
 }
 
 .nav {
-  padding: 1rem 0;
+  background-color: rgba($color-grey-light-1, .9);
+  padding: 1.5rem 0;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
 
   &__box__item {
+    background-color: $color-white;
     padding: 1rem 0;
     font-size: 2.3rem;
     text-transform: uppercase;
     font-weight: 400;
-    color: $color-primary;
+    color: $color-grey-dark;
+    box-shadow: 0 .5rem 2rem rgba($color-black, .15);
+    border-bottom: 3px solid transparent;
+    border-radius: .4rem;
 
     &--1 {
 
@@ -57,6 +63,10 @@
 
     &--4 {
 
+    }
+
+    &:hover {
+      border-bottom: 3px solid $color-primary-light;
     }
   }
 

@@ -13,5 +13,13 @@
   },
   "devDependencies": {
     "node-sass": "^4.10.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BOBCATSON/fill_me_in.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BOBCATSON/fill_me_in/issues"
+  },
+  "homepage": "https://github.com/BOBCATSON/fill_me_in#readme"
 }
