@@ -1,0 +1,10 @@
+.section {
+
+  &__text-box {
+    width: 80%;
+    padding: 3rem 6rem;
+    margin: 0 auto;
+    background-color: rgba($color-white, .7);
+    border-radius: .3rem;
+  }
+}

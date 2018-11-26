@@ -1,26 +1,22 @@
+// section {
+//   &:not(:last-child) {
+//     margin-bottom: 5rem;
+//   }
+// }
+
 .section-about {
-  padding: 10rem 0;
-  // margin-top: 10rem;
-  background-color: rgba($color-grey-light-1, .9);
-}
-
-.about {
-
-  &__text-box {
-    width: 80%;
-    padding: 3rem 6rem;
-    margin: 0 auto;
-    background-color: rgba($color-white, .8);
-    transform: skewX(-8deg);
-  }
-
-  &__inner-text-box {
-    padding: 3rem;
-    transform: skewX(8deg);
-  }
+  padding: 1rem 0 6rem;
 }
 
 .section-food {
   position: relative;
+  padding: 6rem 0 8rem;
+  margin-bottom: 5rem;
+}
+
+.section-drink {
+  position: relative;
   padding: 10rem 0;
+  -webkit-clip-path: polygon(0 5vh, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 5vh, 100% 0, 100% 100%, 0 100%);
 }
