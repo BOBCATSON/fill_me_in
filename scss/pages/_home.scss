@@ -1,22 +1,30 @@
-// section {
-//   &:not(:last-child) {
-//     margin-bottom: 5rem;
-//   }
-// }
 
 .section-about {
   padding: 1rem 0 6rem;
+  font-size: $font-size-medium;
+  box-shadow: 2rem 0 2rem rgba($color-black, .15);
 }
 
 .section-food {
   position: relative;
   padding: 6rem 0 8rem;
   margin-bottom: 5rem;
+  -webkit-clip-path: polygon(0 5vh, 100% 0, 100% 90vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
 }
 
 .section-drink {
   position: relative;
   padding: 10rem 0;
-  -webkit-clip-path: polygon(0 5vh, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 5vh, 100% 0, 100% 100%, 0 100%);
+  // -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  // clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+}
+
+.section-contact {
+  padding: 10rem;
+}
+
+.section-footer {
+  padding: 4rem;
+  // background-image: linear-gradient(to right, rgba($color-black, .9), rgba($color-primary, .1);
 }

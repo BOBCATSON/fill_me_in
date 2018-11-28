@@ -163,7 +163,11 @@ body {
   background-image: linear-gradient(to right, #d67c2e, rgba(239, 41, 23, 0.8));
   display: inline-block;
   -webkit-background-clip: text;
-  color: transparent; }
+  color: transparent;
+  transition: all .3s;
+  backface-visibility: hidden; }
+  .heading__secondary:hover {
+    transform: scale(1.1); }
 
 .u-center-text {
   text-align: center; }
@@ -184,7 +188,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .2;
+  opacity: .5;
   overflow: hidden; }
   .bg-video__content {
     height: 100%;
@@ -307,15 +311,23 @@ a.active:before {
   animation: revbottomright 0.5s ease-in-out forwards; }
 
 .section-about {
-  padding: 1rem 0 6rem; }
+  padding: 1rem 0 6rem;
+  font-size: 2rem;
+  box-shadow: 2rem 0 2rem rgba(0, 0, 0, 0.15); }
 
 .section-food {
   position: relative;
   padding: 6rem 0 8rem;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  -webkit-clip-path: polygon(0 5vh, 100% 0, 100% 90vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%); }
 
 .section-drink {
   position: relative;
-  padding: 10rem 0;
-  -webkit-clip-path: polygon(0 5vh, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 5vh, 100% 0, 100% 100%, 0 100%); }
+  padding: 10rem 0; }
+
+.section-contact {
+  padding: 10rem; }
+
+.section-footer {
+  padding: 4rem; }

@@ -43,4 +43,12 @@ body {
   display: inline-block;
   -webkit-background-clip: text;
   color: transparent;
+
+  transition: all .3s;
+  backface-visibility: hidden;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
 }
