@@ -1,6 +1,6 @@
 
 .section-about {
-  padding: 10rem 0;
+  padding: 20rem 0;
   font-size: $font-size-medium;
 }
 
@@ -10,13 +10,10 @@
 }
 
 .section-contact {
-  padding: 10rem;
+  padding: 20rem 0;
+  font-size: $font-size-medium;
 }
 
 .section-footer {
-  padding: 4rem 6rem 3rem;
-  background-image: linear-gradient(to bottom, rgba($color-black, .8), rgba($color-primary-red, .8)),
-  url('./../img/fruit_02.jpg');
-  background-size: cover;
-  background-position: center;
+  padding: 6rem 12rem 3rem;
 }

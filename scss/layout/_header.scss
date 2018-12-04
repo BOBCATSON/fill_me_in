@@ -101,6 +101,11 @@
   }
 }
 
+
+// a[href^="#"]:focus {
+//   // border: 5px solid rgba($color-primary-red, .6);
+//   background-color: red;
+
 a.active:after {
   animation: revtopleft 0.5s ease-in-out forwards;
 }
