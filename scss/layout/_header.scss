@@ -1,5 +1,5 @@
 .header {
-  height: 82vh;
+  height: 85vh;
   position: relative;
   background-image: linear-gradient(
     to right bottom,
@@ -28,6 +28,12 @@
     text-align: center;
     transform: translate(-50%, -50%);
     backface-visibility: hidden;
+  }
+
+  &__social-icons {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 3.5rem;
   }
 }
 

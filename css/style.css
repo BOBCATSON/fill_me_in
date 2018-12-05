@@ -202,11 +202,18 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: .3rem; }
 
+.section-copyright {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-size: cover;
+  background-position: top center; }
+
 .section-footer {
   background-image: linear-gradient(to right bottom, rgba(214, 124, 46, 0.8), rgba(239, 41, 23, 0.8));
   background-size: cover;
   background-position: top center;
-  color: #fff; }
+  color: #fff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px; }
 
 .row {
   max-width: 114rem;
@@ -235,7 +242,7 @@ body {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
-  height: 82vh;
+  height: 85vh;
   position: relative;
   background-image: linear-gradient(to right bottom, rgba(214, 124, 46, 0.8), rgba(239, 41, 23, 0.4)), url("./../img/hero.jpg");
   background-size: cover;
@@ -254,6 +261,10 @@ body {
     text-align: center;
     transform: translate(-50%, -50%);
     backface-visibility: hidden; }
+  .header__social-icons {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 3.5rem; }
 
 .nav {
   background-color: #fff;
@@ -318,7 +329,8 @@ a.active:before {
 
 .section-about {
   padding: 20rem 0;
-  font-size: 2rem; }
+  font-size: 2rem;
+  letter-spacing: .2rem; }
 
 .section-food {
   position: relative;
@@ -326,7 +338,11 @@ a.active:before {
 
 .section-contact {
   padding: 20rem 0;
-  font-size: 2rem; }
+  font-size: 2rem;
+  letter-spacing: .2rem; }
 
 .section-footer {
-  padding: 6rem 12rem 3rem; }
+  padding: 3rem 0; }
+
+.section-copyright {
+  padding: 2rem 0; }

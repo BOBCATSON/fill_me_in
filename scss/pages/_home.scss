@@ -2,6 +2,7 @@
 .section-about {
   padding: 20rem 0;
   font-size: $font-size-medium;
+  letter-spacing: .2rem;
 }
 
 .section-food {
@@ -12,8 +13,13 @@
 .section-contact {
   padding: 20rem 0;
   font-size: $font-size-medium;
+  letter-spacing: .2rem;
 }
 
 .section-footer {
-  padding: 6rem 12rem 3rem;
+  padding: 3rem 0;
+}
+
+.section-copyright {
+  padding: 2rem 0;
 }
