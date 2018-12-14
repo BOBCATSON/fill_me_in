@@ -1,19 +1,27 @@
 
 .section-about {
-  padding: 20rem 0;
+  padding: 10rem 0;
   font-size: $font-size-medium;
-  letter-spacing: .2rem;
+  letter-spacing: .1rem;
 }
 
 .section-food {
   position: relative;
+  font-size: $font-size-medium;
+  padding: 10rem 0;
+}
+
+.section-events {
+  font-size: $font-size-medium;
   padding: 10rem 0;
 }
 
 .section-contact {
-  padding: 20rem 0;
+  padding: 15rem 0;
   font-size: $font-size-medium;
-  letter-spacing: .2rem;
+  letter-spacing: .1rem;
+  background-image: url('./../../img/food_background.jpg');
+  
 }
 
 .section-footer {
