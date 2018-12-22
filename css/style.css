@@ -152,6 +152,33 @@ ul {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-envelop:before {
+  content: "\e945"; }
+
+.icon-location:before {
+  content: "\e947"; }
+
+.icon-map:before {
+  content: "\e94b"; }
+
+.icon-map2:before {
+  content: "\e94c"; }
+
+.icon-mobile:before {
+  content: "\e958"; }
+
+.icon-quotes-left:before {
+  content: "\e977"; }
+
+.icon-quotes-right:before {
+  content: "\e978"; }
+
+.icon-fire:before {
+  content: "\e9a9"; }
+
+.icon-mail:before {
+  content: "\ea83"; }
+
 .icon-facebook2:before {
   content: "\ea91"; }
 
@@ -241,11 +268,7 @@ body {
 
 .section-footer {
   background-image: linear-gradient(to right bottom, rgba(214, 124, 46, 0.8), rgba(239, 41, 23, 0.8));
-  background-size: cover;
-  background-position: top center;
-  color: #fff;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px; }
+  color: #fff; }
 
 .row {
   max-width: 114rem;
@@ -302,10 +325,11 @@ body {
   .header__social-icons-box {
     position: absolute;
     bottom: 1.5rem;
-    right: 3.5rem;
-    font-size: 4rem; }
+    right: 3.5rem; }
   .header__social-icon {
-    color: #fff; }
+    color: #fff;
+    font-size: 4rem;
+    text-decoration: none; }
     .header__social-icon:not(:last-child) {
       padding-right: 2rem; }
 
@@ -389,6 +413,25 @@ a.active:before {
   font-size: 1.8rem;
   letter-spacing: .1rem;
   background-image: url("./../../img/food_background.jpg"); }
+
+.contact__social-icons-box {
+  padding: 3rem 0 0;
+  text-align: center; }
+
+.contact__social-icon {
+  display: inline-block;
+  font-size: 4.5rem;
+  padding: 0 3rem;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #d67c2e, #EF2917);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all .3s; }
+  .contact__social-icon:not(:last-child) {
+    padding-right: 2rem; }
+  .contact__social-icon:hover {
+    transform: rotate(10deg) scale(1.2); }
 
 .section-footer {
   padding: 3rem 0; }

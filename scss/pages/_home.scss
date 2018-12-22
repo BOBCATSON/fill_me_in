@@ -21,7 +21,30 @@
   font-size: $font-size-medium;
   letter-spacing: .1rem;
   background-image: url('./../../img/food_background.jpg');
-  
+}
+
+.contact__social-icons-box {
+  padding: 3rem 0 0;
+  text-align: center;
+}
+
+.contact__social-icon {
+  display: inline-block;
+  font-size: 4.5rem;
+  padding: 0 3rem;
+  text-decoration: none;
+  background-image: linear-gradient(to right, $color-primary, $color-primary-red);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all .3s;
+    &:not(:last-child) {
+      padding-right: 2rem;
+    }
+
+    &:hover {
+      transform: rotate(10deg) scale(1.2);
+    }
 }
 
 .section-footer {
