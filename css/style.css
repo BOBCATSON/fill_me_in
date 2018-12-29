@@ -267,8 +267,23 @@ body {
   background-position: top center; }
 
 .section-footer {
-  background-image: linear-gradient(to right bottom, rgba(214, 124, 46, 0.8), rgba(239, 41, 23, 0.8));
+  background-color: rgba(0, 0, 0, 0.9);
   color: #fff; }
+
+.footer__text {
+  border-top: 3px solid #d67c2e;
+  padding: 2rem; }
+
+.footer__map {
+  border-top: 3px solid #d67c2e;
+  padding: 2rem; }
+
+.footer__address {
+  border-top: 3px solid #d67c2e;
+  padding: 2rem; }
+
+.copyright__parent {
+  margin-top: -4rem; }
 
 .row {
   max-width: 114rem;
@@ -327,11 +342,15 @@ body {
     bottom: 1.5rem;
     right: 3.5rem; }
   .header__social-icon {
+    display: inline-block;
     color: #fff;
     font-size: 4rem;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: all .3s; }
     .header__social-icon:not(:last-child) {
       padding-right: 2rem; }
+    .header__social-icon:hover {
+      transform: scale(1.1) translateY(-0.3rem); }
 
 .nav {
   background-color: #fff;
@@ -415,7 +434,7 @@ a.active:before {
   background-image: url("./../../img/food_background.jpg"); }
 
 .contact__social-icons-box {
-  padding: 3rem 0 0;
+  padding: 2.5rem 0 0;
   text-align: center; }
 
 .contact__social-icon {
@@ -434,7 +453,7 @@ a.active:before {
     transform: rotate(10deg) scale(1.2); }
 
 .section-footer {
-  padding: 3rem 0; }
+  padding: 4rem 0 1rem; }
 
 .section-copyright {
   padding: 2rem 0; }

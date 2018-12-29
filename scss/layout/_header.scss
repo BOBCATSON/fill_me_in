@@ -47,11 +47,17 @@
   }
 
   &__social-icon {
+    display: inline-block;
       color: $color-white;
       font-size: 4rem;
       text-decoration: none;
+      transition: all .3s;
       &:not(:last-child) {
         padding-right: 2rem;
+      }
+
+      &:hover{
+        transform: scale(1.1) translateY(-.3rem);
       }
   }
 }
