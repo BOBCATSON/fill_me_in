@@ -7,20 +7,25 @@
 
   &__text {
     border-top: 3px solid $color-primary;
-    padding: 2rem;
+    padding: 3.5rem 2rem 0rem;
   }
 
   &__map {
     border-top: 3px solid $color-primary;
-    padding: 2rem;
+    padding: 3.5rem 2rem 0rem;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__address {
     border-top: 3px solid $color-primary;
-  padding: 2rem;
+  padding: 3.5rem 2rem 0rem;
   }
 }
 
 .copyright__parent {
   margin-top: -4rem;
+  padding: 0 0 2rem;
 }
