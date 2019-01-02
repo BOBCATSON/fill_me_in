@@ -4,17 +4,28 @@
   font-size: $font-size-medium;
   letter-spacing: .1rem;
 
+    @include respond(phone) {
+      padding: 3rem 0;
+    }
 }
 
 .section-food {
   position: relative;
   font-size: $font-size-medium;
   padding: 10rem 0;
+
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
 }
 
 .section-events {
   font-size: $font-size-medium;
   padding: 10rem 0;
+
+  @include respond(phone) {
+    padding: 3rem 0;
+  }
 }
 
 .section-contact {
@@ -23,11 +34,19 @@
   letter-spacing: .1rem;
   background-image: url('./../../img/food_background.jpg');
   border-top: 2px solid $color-grey-light-1;
+
+  @include respond(phone) {
+    padding: 3rem 0;
+  }
 }
 
 .contact__social-icons-box {
   padding: 2.5rem 0 0;
   text-align: center;
+
+  @include respond(phone) {
+    padding: 3rem 0 0;
+  }
 }
 
 .contact__social-icon {
@@ -40,8 +59,15 @@
   -webkit-background-clip: text;
   color: transparent;
   transition: all .3s;
+
+    @include respond(phone) {
+      font-size: 4rem;
+      padding: 2rem 1rem 0;
+    }
+
     &:not(:last-child) {
       padding-right: 2rem;
+
     }
 
     &:hover {

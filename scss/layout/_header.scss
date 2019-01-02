@@ -79,6 +79,10 @@
       transition: all .3s;
       &:not(:last-child) {
         padding-right: 2rem;
+
+        @include respond(phone) {
+          padding-right: 3.5rem;
+        }
       }
 
       &:hover{

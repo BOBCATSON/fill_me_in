@@ -5,27 +5,63 @@
 
 .footer {
 
-  &__text {
-    border-top: 3px solid $color-primary;
-    padding: 3.5rem 2rem 0rem;
-  }
+    &__logo-box {
+      padding: 0 0 3rem;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+    }
 
-  &__map {
-    border-top: 3px solid $color-primary;
+    &__logo {
+      width: 14rem;
+
+      @include respond(phone) {
+        width: 45%;
+      }
+    }
+
+    &__text {
+      border-top: 3px solid $color-primary;
+      padding: 3.5rem 2rem 0rem;
+
+      @include respond(phone) {
+        padding: 3rem 1rem;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    &__map {
+      border-top: 3px solid $color-primary;
+      padding: 3.5rem 2rem 0rem;
+
+      @include respond(phone) {
+        padding: 3rem 1rem;
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    &__address {
+      border-top: 3px solid $color-primary;
     padding: 3.5rem 2rem 0rem;
 
     @include respond(phone) {
-      display: none;
+      padding: 3rem 1rem;
+      text-align: center;
+      width: 90%;
+      margin: 0 auto;
     }
-  }
-
-  &__address {
-    border-top: 3px solid $color-primary;
-  padding: 3.5rem 2rem 0rem;
   }
 }
 
 .copyright__parent {
   margin-top: -4rem;
   padding: 0 0 2rem;
+  @include respond(phone) {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
