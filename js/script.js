@@ -38,14 +38,14 @@ $('a[href*="#"]')
   });
 
   //nav item styles
-  $('a').hover(function() {
-      $(this).removeClass('active');
+  // $('a').hover(function() {
+  //     $(this).removeClass('active');
       // setTimeout(function(){
       // },500);
-    },
-    function() {
-      $(this).addClass('active');
-    }
-  );
+  //   },
+  //   function() {
+  //     $(this).addClass('active');
+  //   }
+  // );
 
 });

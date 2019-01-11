@@ -1,10 +1,9 @@
-a {
+a:not(.social_icon):not(.nav__box__anchor) {
   text-decoration: none;
-  color: $color-grey-dark;
-  &:visited {
-    color: inherit;
-  }
+
   &:hover {
-    color: $color-primary;
+    color: $color-primary-red;
   }
+
+
 }

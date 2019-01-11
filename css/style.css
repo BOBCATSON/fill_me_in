@@ -128,6 +128,9 @@
     padding-bottom: 0;
     visibility: hidden; } }
 
+.copyright__link:hover {
+  transform: skewX(4deg); }
+
 *,
 *::after,
 *::before {
@@ -280,6 +283,11 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+a:not(.social_icon):not(.nav__box__anchor) {
+  text-decoration: none; }
+  a:not(.social_icon):not(.nav__box__anchor):hover {
+    color: #EF2917; }
+
 .bg-video {
   position: absolute;
   top: 0;
@@ -304,6 +312,10 @@ body {
     .section__text-box {
       width: 85%;
       padding: 2rem; } }
+  .section__text-box > p {
+    color: #555; }
+    .section__text-box > p > a {
+      color: #d67c2e; }
 
 .section-copyright {
   background-color: rgba(0, 0, 0, 0.8);
@@ -314,36 +326,42 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff; }
 
-.footer__logo-box {
-  padding: 0 0 3rem;
+.footer__hackney-icon-box {
   text-align: center;
-  width: 100%;
-  margin: 0 auto; }
-
-.footer__logo {
-  width: 14rem; }
+  padding: 0 0 1.5rem 0; }
   @media (max-width: 37.5em) {
-    .footer__logo {
-      width: 45%; } }
+    .footer__hackney-icon-box {
+      padding-top: 0; } }
+
+.footer__icon-hackney {
+  padding: 3rem 0 0 0;
+  width: 10rem; }
+  @media (max-width: 37.5em) {
+    .footer__icon-hackney {
+      padding: 2rem 0 0 0; } }
 
 .footer__text {
   border-top: 3px solid #d67c2e;
   padding: 3.5rem 2rem 0rem; }
   @media (max-width: 37.5em) {
     .footer__text {
-      padding: 3rem 1rem;
+      padding: 3rem 1rem 0rem;
       text-align: center;
       width: 90%;
       margin: 0 auto; } }
+  .footer__text__hackney > a {
+    color: #fff; }
 
 .footer__map {
   border-top: 3px solid #d67c2e;
-  padding: 3.5rem 2rem 0rem; }
+  padding: 3.5rem 0rem 0rem; }
   @media (max-width: 37.5em) {
     .footer__map {
-      padding: 3rem 1rem;
+      padding: 3rem 0rem;
       width: 90%;
       margin: 0 auto; } }
+  .footer__map iframe {
+    width: 90%; }
 
 .footer__address {
   border-top: 3px solid #d67c2e;
@@ -356,7 +374,7 @@ body {
       margin: 0 auto; } }
 
 .copyright__parent {
-  margin-top: -4rem;
+  margin-top: 3rem;
   padding: 0 0 2rem; }
   @media (max-width: 37.5em) {
     .copyright__parent {
@@ -364,10 +382,16 @@ body {
       width: 90%;
       margin: 0 auto; } }
 
+.copyright__text {
+  color: #fff; }
+
+.copyright__link {
+  color: #fff; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
-  .row:not(:last-child) {
+  .row:not(:last-child):not(.row-exception) {
     margin-bottom: 8rem; }
   .row::after {
     content: "";
@@ -411,15 +435,6 @@ body {
       .header__logo-box {
         display: none; } }
   .header__logo {
-    width: 10rem; }
-  .header__hackney-icon-box {
-    position: absolute;
-    top: 3.5rem;
-    left: 3.5rem; }
-    @media (max-width: 37.5em) {
-      .header__hackney-icon-box {
-        display: none; } }
-  .header__icon-hackney {
     width: 10rem; }
   .header__text-box {
     width: 80%;
